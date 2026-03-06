@@ -494,8 +494,8 @@ void setupWeb() {
 
     for(size_t i=0; i<text.length(); i++){
         keyboardBLE_write_HAL(text[i]);
-        delay(500);   // Pause für Stabilität und zum Senden des Textes
-        keyboardBLE_write_HAL(KEY_RETURN);
+        delay(5);   // Pause für Stabilität 
+        //keyboardBLE_write_HAL(KEY_RETURN); das funktioniert so nicht
     }
 
     server.send(200,"text/plain","OK");
