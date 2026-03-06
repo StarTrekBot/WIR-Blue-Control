@@ -2,7 +2,7 @@
 #include <Arduino.h> // eingefügt für Arduino IDE
 #include <string>    // eingefügt für Arduino IDE
 
-#if (ENABLE_KEYBOARD_BLE == 1)  
+//#if (ENABLE_KEYBOARD_BLE == 1)  
 
 // ---- fehlender OMOTE Call back Typ ----
 typedef void (*tAnnounceBLEmessage_cb)(std::string message);
@@ -35,4 +35,4 @@ void keyboardBLE_sendString_HAL(const std::string &s);
 void consumerControlBLE_write_HAL(const MediaKeyReport value);
 void consumerControlBLE_longpress_HAL(const MediaKeyReport value);
 
-#endif  
+//#endif  // ENABLE_KEYBOARD_BLE

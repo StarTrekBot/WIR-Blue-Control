@@ -494,7 +494,7 @@ void setupWeb() {
 
     for(size_t i=0; i<text.length(); i++){
         keyboardBLE_write_HAL(text[i]);
-        delay(5);   // kleine Pause für Stabilität
+        delay(500);   // Pause für Stabilität und zum Senden des Textes
         keyboardBLE_write_HAL(KEY_RETURN);
     }
 

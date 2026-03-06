@@ -1,5 +1,5 @@
 /**********************************************************************
-* WIR-Blue-Control
+* WIR-Blue-Control V1.1
 * ESP32 WLAN IR gesteuerte Bluetooth Fernbedienung für FireTV
 *
 * Copyright (c) 2026 Rüdiger Lauff
@@ -26,8 +26,6 @@
 *---------------------------------------------------------------------
 * 
 */
-
-#define ENABLE_KEYBOARD_BLE 1
 
 #include <WiFi.h>
 #include <WebServer.h>

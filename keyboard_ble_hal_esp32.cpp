@@ -1,8 +1,10 @@
 #include <Arduino.h>  // eingefügt für Arduino IDE
-#if (ENABLE_KEYBOARD_BLE == 1)  
+//#if (ENABLE_KEYBOARD_BLE == 1)  
 
 #include <nvs.h>
 #include <nvs_flash.h>
+
+#include "sdkconfig.h"
 
 //#include "lib/ESP32-BLE-Keyboard/BleKeyboard.h"
 #include "BleKeyboard.h"         // geändert für Arduino IDE
@@ -210,4 +212,4 @@ void consumerControlBLE_longpress_HAL(const MediaKeyReport value) {
   bleKeyboard.release(value);
 }
 
-#endif  
+//#endif  // ENABLE_KEYBOARD_BLE
